@@ -8,7 +8,6 @@ export const Wrapper = styled.label`
   height: ${token.wrapperSize}px;
   display: flex;
   align-items: center;
-  justify-content: center;
 
   span {
     margin-right: ${(token.size - token.boxSize) / 2}px;
@@ -21,7 +20,7 @@ export const Wrapper = styled.label`
     height: ${token.boxSize}px;
     position: relative;
     cursor: pointer;
-    border-radius: ${({ theme }) => theme.rounding.sm};
+    border-radius: ${({ theme }) => theme.rounding.xs};
     border: ${token.boxBorderWidth} solid
       ${({ theme }) => theme.colors.lightGray};
     -moz-appearance: none;

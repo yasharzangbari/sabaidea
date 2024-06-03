@@ -1,11 +1,6 @@
-import type { Metadata } from "next";
 import { IranSansX } from "@/theme/font";
-import { Theme } from "@/constants/theme";
 import "../theme/global.css";
-
-export const metadata: Metadata = {
-  title: "sabaidea",
-};
+import StyledComponentProviders from "@/providers/styledComponentProviders";
 
 export default function RootLayout({
   children,
@@ -14,7 +9,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-      <body className={IranSansX.className}>{children}</body>
+      <body className={IranSansX.className}>
+        <StyledComponentProviders>{children} </StyledComponentProviders>
+      </body>
     </html>
   );
 }

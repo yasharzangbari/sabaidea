@@ -9,7 +9,7 @@ import {
   ButtonProps,
 } from "./button.types";
 
-const Button: FC<ButtonProps> = (props) => {
+export const Button: FC<ButtonProps> = (props) => {
   const {
     title,
     children,
@@ -38,5 +38,3 @@ const Button: FC<ButtonProps> = (props) => {
     </Styled.Button>
   );
 };
-
-export default Button;

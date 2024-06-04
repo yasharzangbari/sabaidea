@@ -57,6 +57,10 @@ export const Caption = styled.div`
 export const Title = styled.span`
   color: ${({ theme }) => theme.colors.lightGray};
   font-size: ${({ theme }) => theme.spacing.md};
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 140px;
 `;
 
 export const Rate = styled.div`
@@ -105,5 +109,9 @@ export const HiddenContent = styled.div`
 
   .title {
     font-size: ${({ theme }) => theme.spacing.lg};
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 142px;
   }
 `;

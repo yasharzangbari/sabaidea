@@ -4,17 +4,22 @@ import * as Styled from "./movieList.styled";
 import useTranslation from "next-translate/useTranslation";
 import { MovieListPropType } from "./movieList.types";
 import { Card } from "../card";
-import { getGenre } from "@/app/utils/getGenre";
+import { getGenre } from "@/utils/getGenre";
+import { useFilters } from "@/hooks/useFilters";
 
 export const MovieList: FC<MovieListPropType> = ({ movies }) => {
   const { t } = useTranslation();
+
+  const { filterMovies } = useFilters(movies);
+
+  console.log("filterMovies", filterMovies);
 
   return (
     <Styled.Container>
       <Styled.Title>{t("allMOviesAndSeries")}</Styled.Title>
       <Styled.List>
-        {movies?.map((movie) => {
-          const genre = getGenre(movie.categories);
+        {filterMovies?.map((movie) => {
+          const genre = getGenre(movie.categories, "title");
           return (
             <Card
               key={movie.id}

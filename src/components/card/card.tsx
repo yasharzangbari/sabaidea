@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Like } from "../icons/like";
 import { CardData } from "./card.types";
 import placeholder from "../../assets/image/noImage.avif";
-import { toPersianNumber } from "@/app/utils/toPersianNumber";
+import { toPersianNumber } from "@/utils/toPersianNumber";
 
 export const Card: FC<CardData> = ({
   image,

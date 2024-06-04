@@ -10,6 +10,7 @@ export const spacing = {
   ssm: "6px",
   sm: "10px",
   md: "12px",
+  xmd: "14px",
   lg: "16px",
   xl: "20px",
   "2xl": "24px",
@@ -39,6 +40,8 @@ export const Theme = {
     white: "#fff",
     darkBlack: "#171717",
     darkGray: "#232222",
+    gradient:
+      "linear-gradient( to bottom,rgba(97, 93, 93, 0.9),rgb(11, 10, 10))",
   },
   fontWeight: FONT_WEIGHT,
   spacing: spacing,

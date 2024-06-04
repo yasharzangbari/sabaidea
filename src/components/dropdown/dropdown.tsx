@@ -1,17 +1,17 @@
 import React, { FC, useState } from "react";
 import * as Styled from "./dropdown.styled";
 import { ArrowDown } from "../icons";
-import { Checkbox } from "../checkbox";
-import useTranslation from "next-translate/useTranslation";
 
-export const DropDown: FC<any> = ({ label, children }) => {
-  const { t } = useTranslation();
+export const DropDown: FC<{ label: string; children: React.ReactNode }> = ({
+  label,
+  children,
+}) => {
   const [toggle, setToggle] = useState<boolean>(false);
-  const openDropDown = () => setToggle(!toggle);
+  const toggleDropDown = () => setToggle(!toggle);
 
   return (
     <Styled.DropDownWrapper>
-      <Styled.DropDown onClick={openDropDown}>
+      <Styled.DropDown onClick={toggleDropDown}>
         <Styled.DropDownLabel>
           <Styled.DropDownText>{label}</Styled.DropDownText>
           <ArrowDown />

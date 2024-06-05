@@ -3,7 +3,6 @@ import * as Styled from "./card.styled";
 import Image from "next/image";
 import { Like } from "../icons/like";
 import { CardData } from "./card.types";
-import placeholder from "../../assets/image/noImage.avif";
 import { toPersianNumber } from "@/utils/toPersianNumber";
 
 export const Card: FC<CardData> = ({
@@ -22,6 +21,7 @@ export const Card: FC<CardData> = ({
           src={img}
           height={220}
           width={165}
+          priority={true}
           onError={() =>
             setImg(
               "https://img.freepik.com/premium-vector/photo-icon-picture-icon-image-sign-symbol-vector-illustration_64749-4409.jpg"

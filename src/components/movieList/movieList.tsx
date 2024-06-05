@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Movies } from "@/types/movieList";
 import * as Styled from "./movieList.styled";
 import useTranslation from "next-translate/useTranslation";
 import { MovieListPropType } from "./movieList.types";
@@ -11,8 +10,6 @@ export const MovieList: FC<MovieListPropType> = ({ movies }) => {
   const { t } = useTranslation();
 
   const { filterMovies } = useFilters(movies);
-
-  console.log("filterMovies", filterMovies);
 
   return (
     <Styled.Container>

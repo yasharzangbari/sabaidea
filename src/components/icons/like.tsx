@@ -4,15 +4,12 @@ export const Like = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // xmlns:xlink="http://www.w3.org/1999/xlink"
-      // xml:space="preserve"
       version="1.1"
-      // style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;"
       viewBox="0 0 10000 12500"
       x="0px"
       y="0px"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
     >
       <defs>
         <style type="text/css"></style>
@@ -31,9 +28,9 @@ export const Like = () => {
         x="0"
         y="10015"
         fill="#fff"
-        font-size="5px"
-        font-weight="bold"
-        font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+        fontSize="5px"
+        fontWeight="bold"
+        fontFamily="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
       >
         Created by alifrio
       </text>
@@ -41,9 +38,9 @@ export const Like = () => {
         x="0"
         y="10020"
         fill="#fff"
-        font-size="5px"
-        font-weight="bold"
-        font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+        fontSize="5px"
+        fontWeight="bold"
+        fontFamily="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
       >
         from the Noun Project
       </text>

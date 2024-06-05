@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    image: toman-demo-app
+    image: sabaidea
     build:
       context: ./
       target: dev
